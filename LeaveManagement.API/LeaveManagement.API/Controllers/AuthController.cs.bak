@@ -14,12 +14,6 @@ namespace LeaveManagement.API.Controllers
         {
             _userService = userService;
         }
-		
-		[HttpGet("test")]
-		public IActionResult Test()
-		{
-			return Ok("Leave API working");
-		}
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
