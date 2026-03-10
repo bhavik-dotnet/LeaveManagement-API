@@ -20,13 +20,6 @@ namespace LeaveManagement.API.Controllers
         {
             _leaveService = leaveService;
         }
-		
-		
-		[HttpGet("test")]
-		public IActionResult Test()
-		{
-			return Ok("Leave API working");
-		}
 
         [HttpPost("apply")]
         public async Task<IActionResult> ApplyLeave([FromBody] ApplyLeaveDto applyLeaveDto)
